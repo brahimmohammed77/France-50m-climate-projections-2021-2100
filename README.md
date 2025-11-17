@@ -9,10 +9,15 @@ Downscaling climate change projections to topoclimates across metropolitan Franc
 Contents
 
 Model evaluation (R): comparison of CMIP6 models to Météo-France observations
+
 CHELSA pre-processing (R): extraction, mosaicking, reprojection
+
 Anomaly calculation (R): monthly deviations relative to 1981–2010
+
 Tiles downscaling (R): Gaussian Kernel interpolation to 50 m
+
 Mosaicking & climatology integration (Python): assembling final national rasters
+
 The scripts reproduce the entire downscaling chain that produced the 23,040 GeoTIFF files included in the final dataset.
 
 Requirements
@@ -60,8 +65,11 @@ Values stored ×100 (divide by 100 to retrieve °C or mm)
 Variables:
 
  tas = mean temperature
+ 
  tasmax = maximum temperature
+ 
  tasmin = minimum temperature
+ 
  pr = precipitation
 
 Citation
@@ -69,10 +77,13 @@ Citation
 If you use these scripts, please cite:
 
 Brahim, M., Piedallu, C., Serra-Diaz, J.M. (2025).
+
 Downscaling climate change projections to topoclimates across metropolitan France (2021–2100).
 
 Author Contributions (CRediT)
 
  Mohammed Brahim – Conceptualization, Methodology, Software, Data Curation, Analysis, Visualization, Writing – Original Draft
+ 
  Christian Piedallu – Supervision, Methodology, Resources, Review & Editing
+ 
  Josep M. Serra-Diaz – Conceptualization, Funding Acquisition, Supervision, Review & Editing
